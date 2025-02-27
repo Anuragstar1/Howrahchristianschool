@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Teachers - Howrah Christian School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(to right, #0d47a1, #42a5f5);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .header img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            margin-bottom: 10px;
+            animation: glow 1.5s infinite alternate;
+        }
+        .header-title {
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.2s ease-in-out;
+        }
+        .header-subtitle {
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            font-style: italic;
+            color: #fce4ec;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeInText 2s ease-in-out;
+        }
+        
+        /* Header Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+            to { box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0d47a1;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .teachers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .teacher-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .teacher-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+        .teacher-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #42a5f5;
+        }
+        .teacher-card h3 {
+            margin: 10px 0 5px;
+        }
+        .teacher-card p {
+            color: #555;
+            font-size: 14px;
+        }
+        .principal-card, .secretary-card {
+            background: #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin: 20px auto;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .principal-card img, .secretary-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #42a5f5;
+        }
+        .principal-card:hover, .secretary-card:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://howrahchristianschool.wordpress.com/wp-content/uploads/2017/12/hsc-update-6.png" alt="School Logo">
+        <div class="header-text">
+            <span class="header-title">Howrah Christian School</span>
+            <p class="header-subtitle">Your Pathway of Excellence in Education</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Meet Our Teachers</h1>
+        <div class="principal-card">
+            <img src="Teacher/maam.jpg" alt="Principal">
+            <h3>Suparna Sarkar</h3>
+            <p>Principal</p>
+        </div>
+        <div class="secretary-card">
+            <img src="Teacher/caroo.jpg" alt="Secretary">
+            <h3>Caroline Adebayo </h3>
+            <p>School Secretary</p>
+        </div>
+        <div class="teachers">
+            <div class="teacher-card"><img src="Teacher/Anu.jpg"><h3>Anurag Nath</h3><p>M.sc (Mathematics) + B.ed</p></div>
+            <div class="teacher-card"><img src="Teacher/Anchu.jpg"><h3>Anchal Pandey</h3><p>M.A (Political Science) + TTC</p></div>
+            <div class="teacher-card"><img src="Teacher/Momo.jpg"><h3>Namrata Rauth</h3><p>M.sc (E.V.S) + B.ed</p></div>
+            <div class="teacher-card"><img src="Teacher/Nisha.jpg"><h3>Nisha Gupta</h3><p>M.A (Political Science) + B.ed</p></div>
+            <div class="teacher-card"><img src="Teacher/Nigar.jpg"><h3>Nigar Sultana</h3><p>M.A (English)</p></div>
+            <div class="teacher-card"><img src="Teacher/Shankar.jpg"><h3>Shankar Shaw</h3><p>B.sc (Physics)</p></div>
+            <div class="teacher-card"><img src="Teacher/Taniya.jpg"><h3>Taniya Hela</h3><p>B.com</p></div>
+            <div class="teacher-card"><img src="Teacher/Barsha.jpg"><h3>Barsha Hela</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Anita.jpg"><h3>Anita Naha</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Cici.jpg"><h3>Cicilia Roy</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Florence.jpg"><h3>Florence Biswas</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Agnes.jpg"><h3>Agnes James</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Janet.jpg"><h3>Janet Peter</h3><p>B.A</p></div>
+            <div class="teacher-card"><img src="Teacher/Silviya.jpg"><h3>Silviya</h3><p>B.A</p></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Howrah Christian School | All Rights Reserved</p>
+        <p>Website designed and developed by Anurag Nath</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howrah Christian School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #004080, #00bfff);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: #0066cc;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 3px solid #ffffff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            transition: color 0.3s ease-in-out;
+        }
+        header h1:hover {
+            color: #ffdd57;
+        }
+        header p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #ffdd57;
+        }
+        .marquee {
+            background: #ffffff;
+            color: #004080;
+            padding: 10px;
+            font-weight: bold;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .footer {
+            background: #0066cc;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 3px solid #ffffff;
+        }
+        .pdf-links div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            gap: 20px;
+        }
+        .pdf-links span {
+            flex: 1;
+            text-align: left;
+            font-weight: bold;
+            color: #004080;
+        }
+        .pdf-links a {
+            padding: 8px 15px;
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .view {
+            background: #ffdd57;
+        }
+        .view:hover {
+            background: #ffcc00;
+        }
+        .download {
+            background: #00cc66;
+            color: white;
+        }
+        .download:hover {
+            background: #00994d;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://howrahchristianschool.wordpress.com/wp-content/uploads/2017/12/hsc-update-6.png" alt="HCS Logo">
+            <div>
+                <h1>Howrah Christian School</h1>
+                <p>Your pathway to excellence in education</p>
+            </div>
+        </div>
+    </header>
+    
+    <marquee class="marquee">Map pointing and Drawing competition on 26/03/2025</marquee>
+    
+    <div class="container">
+        <div class="section pdf-links">
+            <h2>Important Notices</h2>
+            <div>
+                <span>Academic Calendar</span>
+                <a href="pdf/academic_calendar.pdf" class="view" target="_blank">View</a>
+                <a href="pdf/academic_calendar.pdf" download class="download">Download</a>
+            </div>
+            <div>
+                <span>Class Routine</span>
+                <a href="pdf/class_routine.pdf" class="view" target="_blank">View</a>
+                <a href="pdf/class_routine.pdf" download class="download">Download</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Howrah Christian School | All Rights Reserved</p>
+        <p>Website designed and developed by Anurag Nath</p>
+    </div>
+</body>
+</html>

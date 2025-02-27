@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Howrah Christian School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #1e2a47;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+
+        .header-title {
+            margin-bottom: 10px;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffcc00;
+            animation: fadeInText 1.5s ease-out;
+        }
+
+        .header-title p {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 10px auto 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #e1f0ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003366;
+            text-align: center;
+        }
+
+        .contact-info p, .contact-form input, .contact-form textarea {
+            font-size: 16px;
+        }
+
+        .contact-form {
+            background-color: #f4f4f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-form:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            background-color: #005d9b;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #003c6b;
+        }
+
+        .google-map iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .header-title h1 {
+                font-size: 22px;
+            }
+            header img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Howrah Christian School</h1>
+            <p>Your pathway to excellence in education</p>
+        </div>
+        <img src="https://howrahchristianschool.wordpress.com/wp-content/uploads/2017/12/hsc-update-6.png" alt="Howrah Christian School Logo">
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>For inquiries, suggestions, or further information, feel free to reach out.</p>
+
+        <div class="contact-info">
+            <h3>Our Contact Information</h3>
+            <p><strong>Address:</strong> 17 Moulana Abdul Kalam Azad Road, Salkia, Howrah, 711106</p>
+            <p><strong>Phone:</strong> +919830162255 / +919874156425</p>
+            <p><strong>Email:</strong> <a href="howrahchristianschool2017@gmail.com">howrahchristianschool2017@gmail.com</a></p>
+        </div>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="mailto:howrahchristianschool2017@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="google-map">
+            <h3>Visit Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.238845573105!2d88.34634931473234!3d22.59057705093554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027c592b5084d1%3A0x5a317e45b5e61655!2sHowrah%20Christian%20School!5e0!3m2!1sen!2sin!4v1675395518793!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Howrah Christian School. All Rights Reserved.</p>
+        <p>Website designed and developed by Anurag Nath.</p>
+    </footer>
+</body>
+</html>

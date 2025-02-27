@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .logo {
+            height: 120px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .school-name {
+            font-weight: 600;
+            font-size: 2.5rem;
+            transition: color 0.3s ease-in-out;
+        }
+        .school-name:hover {
+            color: #ffcc00;
+        }
+        .quick-access {
+            background: #005bb5;
+            padding: 10px;
+            text-align: center;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        .quick-access a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background: #004494;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+        .quick-access a:hover {
+            background: #002a66;
+            transform: scale(1.05);
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .achievement-list, .facility-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .achievement-item, .facility-item {
+            background: #e6f2ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .achievement-item:hover, .facility-item:hover {
+            transform: scale(1.05);
+            background: #d0e6ff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            background: #0073e6;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+        .credits {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://howrahchristianschool.wordpress.com/wp-content/uploads/2017/12/hsc-update-6.png" alt="School Logo">
+        <span class="school-name">Howrah Christian School</span>
+        
+    </header>
+    
+    <nav class="quick-access">
+        <a href="Teachers.html">Our Teachers</a>
+        <a href="notice.html">Notices</a>
+    </nav>
+    
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facility-list">
+            <div class="facility-item">📹 24/7 CCTV Surveillance</div>
+            <div class="facility-item">🚰 Fresh Drinking Water</div>
+            <div class="facility-item">🚗 Parking Space Available</div>
+            <div class="facility-item">👨‍🏫 Supportive Teachers</div>
+            <div class="facility-item">🏥 Medical Facility</div>
+            <div class="facility-item">⚽ Big Playground</div>
+            <div class="facility-item">🎤 Free Singing Classes</div>
+            <div class="facility-item">🏸 Different Sports Games (Football, Badminton, Cricket, Basketball)</div>
+            <div class="facility-item">💻 Smart Classroom Facilities</div>
+            <div class="facility-item">📚 Lab Facility</div>
+            
+        </div>
+    </section>
+    
+    <section id="achievements">
+        <h2>Our Achievements</h2>
+        <div class="achievement-list">
+            <div class="achievement-item">🏆 Ranked among the top schools in Howrah in academic excellence.</div>
+            <div class="achievement-item">🌍 Globally Recognized School</div>
+            <div class="achievement-item">🤝 Strong Community Engagement and Social Responsibility Initiatives</div>
+            <div class="achievement-item">🌏 Frequent Exposure to Foreign Guests</div>
+            
+            <div class="achievement-item">🥇 Multiple Awards in Science and Arts Competitions</div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Howrah Christian School | All Rights Reserved</p>
+        <p class="credits">Website design and developed by Anurag Nath</p>
+    </footer>
+</body>
+</html>
